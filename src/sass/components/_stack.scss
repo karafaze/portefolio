@@ -1,0 +1,13 @@
+.stack{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    &--icon{
+        font-size: 3.5em;
+        color: $color-quaternary;
+        &:hover{
+            transform: scale(1.2);
+            color: #fff
+        }
+    }
+}

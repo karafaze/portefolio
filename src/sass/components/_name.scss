@@ -1,0 +1,34 @@
+.signature {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    &--name {
+        font-family: $font-name;
+        font-size: 8em;
+        line-height: 1.3;
+        @include mobile {
+            font-size: 4em;
+        }
+        @include tablet {
+            font-size: 7em;
+        }
+        & span {
+            color: $color-ternary;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    &--job {
+        font-size: 2em;
+        @include mobile {
+            font-size: 1.4em;
+        }
+        @include tablet {
+            font-size: 1.7em;
+        }
+    }
+}

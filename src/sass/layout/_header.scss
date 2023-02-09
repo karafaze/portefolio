@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 1em 0;
+    width: 45%;
+    gap: 1em;
+    margin-left: auto;
+    @include tablet{
+        width: 70%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+    &--items{
+        font-size: 1.3em;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

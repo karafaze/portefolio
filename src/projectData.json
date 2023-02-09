@@ -1,0 +1,44 @@
+[
+    {
+        "id": "0",
+        "name": "Chat App",
+        "description": "React Front End and Express JS + Socket.io",
+        "stack": ["React", "Javascript", "HTML", "CSS", "Socket"],
+        "link": "https://github.com/karafaze/chat-app"
+    },
+    {
+        "id": "1",
+        "name": "Todo App",
+        "description": "Front End using React",
+        "stack": ["React", "Javascript", "HTML", "CSS"],
+        "link": "https://karafaze.github.io/todo-app/"
+    },
+    {
+        "id": "2",
+        "name": "Oh My Food",
+        "description": "Mobile first web application for a foodtech company",
+        "stack": ["HTML", "CSS", "Sass"],
+        "link": "https://karafaze.github.io/oh_my_food/"
+    },
+    {
+        "id": "3",
+        "name": "Kanap",
+        "description": "Front End web application for a sofa company",
+        "stack": ["Javascript", "HTML", "CSS"],
+        "link": "https://github.com/karafaze/kanap"
+    },
+    {
+        "id": "4",
+        "name": "Piiquante",
+        "description": "REST API for a spicy sauce company",
+        "stack": ["ExpressJS", "Javascript", "MongoDB"],
+        "link": "https://github.com/karafaze/piiquante"
+    },
+    {
+        "id": "5",
+        "name": "Kasa",
+        "description": "Front End using React for rental agency",
+        "stack": ["React", "Javascript", "HTML", "CSS"],
+        "link": "https://github.com/karafaze/kasa"
+    }
+]
