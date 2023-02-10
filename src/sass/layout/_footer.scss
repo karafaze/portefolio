@@ -5,16 +5,21 @@
     align-items: center;
     flex-direction: row;
     gap: 0.3em;
-    padding: 2em 0em;
+    padding: .9em 0em;
     & p{
         font-size: 1.3em;
         color: $color-primary;
+        @include mobile{
+            font-size: 1.1em;
+        }
     }
-
     &--icon{
         font-size: 2.2em;
         color: #000;
         cursor: pointer;
+        @include mobile{
+            font-size: 1.5em;
+        }
         &__container{
             display: flex;
             flex-direction: row;
@@ -24,6 +29,12 @@
                 text-decoration: none;
                 font-size: 1.3em;
                 color: #000;
+                &:hover{
+                    text-decoration: underline;
+                }
+                @include mobile{
+                    font-size: 1.1em;
+                }
             }
         }
     }

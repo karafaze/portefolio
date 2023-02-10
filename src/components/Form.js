@@ -10,6 +10,17 @@ export default function Form2() {
         from: "",
     });
 
+    const checkForFormFields = (form) => {
+        if (form.from_name.trim() !== '' 
+            && form.email.trim() !== ''
+            && form.message.trim() !== ''
+            & form.from.trim() !== ''
+            ) {
+                return true;
+            }
+        return false;
+    }
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevFormData) => {
@@ -23,18 +34,23 @@ export default function Form2() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        send(
-            "service_xma4u0a",
-            "template_q82rkkp",
-            formData,
-            "J6c1yuXaSh9Lzmmz7"
-        )
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+        if (checkForFormFields(formData)){
+            send(
+                "service_xma4u0a",
+                "template_q82rkkp",
+                formData,
+                "J6c1yuXaSh9Lzmmz7"
+            )
+                .then((res) => {
+                    console.log(res);
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+        } else {
+            alert('You need to fill all the fields before submitting the form.')
+        }
+
     };
 
     return (
