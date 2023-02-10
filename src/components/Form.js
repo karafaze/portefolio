@@ -42,7 +42,16 @@ export default function Form2() {
                 "J6c1yuXaSh9Lzmmz7"
             )
                 .then((res) => {
-                    console.log(res);
+                    alert('Thank you your message !')
+                    setFormData(prevForm => {
+                        return {
+                            ...prevForm,
+                            from_name: "",
+                            email: "",
+                            message: "",
+                            from: "",
+                        }
+                    })
                 })
                 .catch((err) => {
                     console.log(err);
