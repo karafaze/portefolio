@@ -4,7 +4,7 @@
     justify-content:space-evenly;
     align-items: center;
     padding: 1em 0;
-    width: 45%;
+    width: 35%;
     gap: 1em;
     margin-left: auto;
     @include tablet{
@@ -18,8 +18,12 @@
         text-decoration: none;
         color: white;
         cursor: pointer;
+        padding-bottom: .5em;
+        border-bottom: 1px solid $color-primary;
         &:hover{
             transform: scale(1.1);
+            // padding-bottom: .5em;
+            border-bottom: 1px solid white;
         }
     }
 }
