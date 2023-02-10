@@ -6,17 +6,14 @@
     align-items: center;
     margin-bottom: 3em;
     &--name {
-        border: 1px solid black;
         font-family: $font-name;
         font-size: 8em;
         line-height: 1.3;
         @include tablet {
-            border: 1px solid red;
             font-size: 7em;
         }
         @include mobile {
-            border: 1px solid green;
-            font-size: 6em;
+            font-size: 5em;
         }
         & span {
             color: $color-ternary;
@@ -28,12 +25,10 @@
     &--job {
         font-size: 2em;
         @include tablet {
-            border: 1px solid red;
             font-size: 1.7em;
         }
         @include mobile {
-            border: 1px solid green;
-            font-size: 1.5em;
+            font-size: 1.4em;
         }
     }
 }

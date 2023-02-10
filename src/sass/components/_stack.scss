@@ -2,9 +2,15 @@
     display: flex;
     justify-content: center;
     gap: 2em;
+    @include mobile{
+        gap: 1em;
+    }
     &--icon{
         font-size: 3.5em;
         color: $color-quaternary;
+        @include mobile{
+            font-size: 2.9em;
+        }
         &:hover{
             transform: scale(1.2);
             color: #fff
