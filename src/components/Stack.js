@@ -10,7 +10,7 @@ export default function Stack(props){
         Sass: faSass,
         Javascript: faJs,
         HTML: faHtml5,
-        CSS: faCss3
+        CSS: faCss3,
     }
     const stack = stackObject[props?.stack]
     return (

@@ -1,10 +1,6 @@
 import React from "react";
 import Stack from "../components/Stack";
 import { nanoid } from "nanoid";
-// import kanapCover from '../images/kanap'
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 
 export default function Project(props) {
     const [showFace, setShowFace] = React.useState(true);
@@ -33,7 +29,7 @@ export default function Project(props) {
                 ) : (
                     <div className="card--body__back">
                         <p className="card--link__text">Want to see more ?</p>
-                        <a className="card--link" href={project.link} target="_blank">
+                        <a className="card--link" href={project.link} target="_blank" rel="noreferrer">
                             See GitHub
                         </a>
                     </div>
