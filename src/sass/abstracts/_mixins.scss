@@ -1,3 +1,9 @@
+@mixin small_mobile {
+    @media screen and (max-width: map-get($breakpoints, small_mobile)){
+        @content;
+    }
+}
+
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content;
