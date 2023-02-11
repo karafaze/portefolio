@@ -27,8 +27,7 @@
         "name": "Kanap",
         "description": "Front End web application for a sofa company",
         "stack": ["Javascript", "HTML", "CSS"],
-        "link": "https://github.com/karafaze/kanap",
-        "live_site": "https://karafaze.github.io/kasa/"
+        "link": "https://github.com/karafaze/kanap"
     },
     {
         "id": "4",
