@@ -42,6 +42,7 @@
         "name": "Kasa",
         "description": "Front End using React for rental agency",
         "stack": ["React", "Javascript", "HTML", "CSS"],
-        "link": "https://github.com/karafaze/kasa"
+        "link": "https://github.com/karafaze/kasa",
+        "live_site": "https://karafaze.github.io/kasa/"
     }
 ]
