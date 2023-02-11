@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 
-export default function Form2() {
+export default function Form() {
     const [formData, setFormData] = useState({
         from_name: "",
         to_name: "Fazli",
@@ -29,17 +29,16 @@ export default function Form2() {
                 [name]: value,
             };
         });
-        console.log(formData);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (checkForFormFields(formData)){
             send(
-                "service_xma4u0a",
-                "template_q82rkkp",
+                process.env.REACT_APP_FORM_SERVICE_ID,
+                process.env.REACT_APP_FORM_TEMPLATE_ID,
                 formData,
-                "J6c1yuXaSh9Lzmmz7"
+                process.env.REACT_APP_FORM_USER_ID
             )
                 .then((res) => {
                     alert('Thank you your message !')

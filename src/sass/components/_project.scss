@@ -53,6 +53,7 @@
             align-items: center;
             font-size: 1.2em;
             height: 100%;
+            gap: .4em;
         }
     }
     &--description{
@@ -76,5 +77,6 @@
     &--link{
         color: $color-text;
         font-size: 1em;
+
     }
 }

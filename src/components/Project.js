@@ -32,6 +32,14 @@ export default function Project(props) {
                         <a className="card--link" href={project.link} target="_blank" rel="noreferrer">
                             See GitHub
                         </a>
+                        {
+                            project.live_site ? (
+                                <a className="card--link" href={project.live_site} target="_blank" rel="noreferrer">
+                                See Live Version
+                            </a>
+                            ) : null
+                        }
+
                     </div>
                 )}
             </div>
