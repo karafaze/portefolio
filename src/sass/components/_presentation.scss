@@ -17,6 +17,9 @@
         @include small_mobile{
             font-size: 1.25em;
         }
+        &__special{
+            text-decoration: underline;
+        }
     }
 }
 

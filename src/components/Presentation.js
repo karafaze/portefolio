@@ -5,8 +5,7 @@ export default function Presentation() {
         <React.Fragment>
             <div className="presentation--container">
                 <p className="presentation--content">
-                    I used to be a sale, then I discovered programming with
-                    Python.
+                    I used to be a sale, then I discovered programming with <span className="presentation--content__special">Python</span>.
                 </p>
                 <p className="presentation--content">
                     A few automation scripts later, I dived into webscrapping
@@ -16,7 +15,7 @@ export default function Presentation() {
                 </p>
                 <p className="presentation--content">
                     In 2022, I enrolled with OpenClassrooms on a 7-month course
-                    to learn how to create websites using React and NodeJS.
+                    to learn how to create websites using <span className="presentation--content__special">React and NodeJS</span>.
                 </p>
                 <p className="presentation--content">
                     Highly methodical web developer with competencies in both
