@@ -1,4 +1,14 @@
+div#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 body{
     background-color: $color-primary;
     color: $color-text;
+}
+
+main{
+    flex-grow: 1;
 }

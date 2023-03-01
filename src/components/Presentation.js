@@ -3,7 +3,7 @@ import SectionContainer from "./SectionContainer";
 
 export default function Presentation() {
     return (
-        <SectionContainer title={"About me"}>
+        <SectionContainer title={"About me"} id="aboutme">
             <section className="presentation">
                 <div className="presentation--block">
                     <div className="presentation--block__year">

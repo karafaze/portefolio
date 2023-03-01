@@ -13,7 +13,7 @@ export default function SectionContainer(props) {
     );
 
     return (
-        <div className="section-wrapper">
+        <section className="section-wrapper" id={props.id}>
             <div className="section-wrapper--top" onClick={toggleShow}>
                 <h2 className="section-wrapper--title">{props.title}</h2>
                 <div className="section-wrapper--icon">{chevronIcon}</div>
@@ -26,6 +26,6 @@ export default function SectionContainer(props) {
                 ) : null
             }
 
-        </div>
+        </section>
     );
 }

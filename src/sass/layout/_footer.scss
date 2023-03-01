@@ -1,42 +1,52 @@
-.footer{
+.footer {
+    position: relative;
     background-color: $color-quaternary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 0.3em;
-    padding: .9em 0em;
-    & p{
-        font-size: 1.3em;
-        color: $color-primary;
-        @include mobile{
-            font-size: 1.1em;
+    @include flexcolumn-center;
+    margin-top: 2em;
+    padding: .5em 1em;
+    &--back-to-top{
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        margin-left: auto;
+        @include flexrow-center;
+        gap: .5em;
+        & i {
+            color: $color-primary;
+            font-size: 1.8em;
+        }
+        & a {
+            font-family: $font-title;
+            font-size: 1.3em;
+            color: $color-primary;
+            text-decoration: none;
         }
     }
-    &--icon{
-        font-size: 2.2em;
-        color: #000;
-        cursor: pointer;
-        @include mobile{
-            font-size: 1.5em;
-        }
-        &__container{
+    &--social-media{
+        align-self: flex-start;
+        width: 100%;
+        font-family: $font-text;
+        display: flex;
+        flex-direction: column;
+        gap: .2em;
+        color: $color-primary;
+        font-size: 1.3em;
+        font-family: $font-title;
+        &__icons{
             display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: .3em;
+            flex-direction: column;
+            align-self: flex-start;
+            color: $color-primary;
             & a {
                 text-decoration: none;
+                color: $color-primary;
+                @include flexcenter;
+                align-self: flex-start;
+                gap: .3em
+            }
+            & i {
                 font-size: 1.3em;
-                color: #000;
-                &:hover{
-                    text-decoration: underline;
-                }
-                @include mobile{
-                    font-size: 1.2em;
-                }
             }
         }
     }
-
 }

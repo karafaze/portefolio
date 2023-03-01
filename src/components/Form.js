@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import SectionContainer from "./SectionContainer";
 import { send } from "emailjs-com";
 import FormMessageInput from "./FormMessageInput";
 
@@ -43,7 +42,7 @@ export default function Form({currentFormTopic}) {
                 process.env.REACT_APP_FORM_USER_ID
             )
                 .then((res) => {
-                    alert('Thank you your message !')
+                    alert('Thank you for your message !')
                     setFormData(prevForm => {
                         return {
                             ...prevForm,
@@ -63,7 +62,7 @@ export default function Form({currentFormTopic}) {
     };
 
     return (
-        <section id="form" className="form">
+        <article className="form">
             <form onSubmit={handleSubmit} className="form--container">
                 <div className="form--left">
                     <div className="form--item">
@@ -121,6 +120,6 @@ export default function Form({currentFormTopic}) {
                     </button>
                 </div>
             </form>
-        </section>
+        </article>
     );
 }

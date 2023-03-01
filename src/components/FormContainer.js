@@ -23,9 +23,6 @@ export default function FormContainer() {
     const handleClientChoice = (e) => {
         const { name } = e.target;
         setFormTopic(prevFormTopic => {
-            const updatedTopic = {
-                [name]: !prevFormTopic[name].isChecked
-            }
             return {
                 discussion: {
                     topic: "discussion",
@@ -60,7 +57,7 @@ export default function FormContainer() {
     }, [formTopic])
 
     return (
-        <SectionContainer title="Contact me">
+        <SectionContainer title="Contact me" id="form">
             <form className="preform">
                 <p className="preform--title">Are you looking</p>
                 <div className="preform--field">
