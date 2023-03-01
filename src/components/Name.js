@@ -4,7 +4,7 @@ export default function Name(){
     return (
         <React.Fragment>
             <div id="home" className='signature'>
-                <p className='signature--name'>Hi, I'm <span>Fazli</span></p>
+                <p className='signature--name'>Hi, I'm <span className="signature--name__main">Fazli</span></p>
                 <h1 className='signature--job'>Fullstack Web Developer</h1>
             </div>
         </React.Fragment>
