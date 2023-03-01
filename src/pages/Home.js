@@ -3,7 +3,8 @@ import Name from "../components/Name";
 import Presentation from "../components/Presentation";
 import GlobalStack from "../components/GlobalStack";
 import ProjectList from '../components/ProjectList';
-import Form from '../components/Form';
+import FormContainer from '../components/FormContainer';
+import SectionContainer from "../components/SectionContainer";
 
 export default function Home() {
     return (
@@ -11,8 +12,10 @@ export default function Home() {
             <Name />
             <GlobalStack />
             <Presentation />
-            <ProjectList />
-            <Form />
+            <SectionContainer title="Projects">
+                <ProjectList />
+            </SectionContainer>
+            <FormContainer />
         </main>
     );
 }

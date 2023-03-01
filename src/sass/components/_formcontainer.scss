@@ -1,0 +1,28 @@
+.preform{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: 0 0.3em;
+    &--title{
+        font-size: 1.2em;
+        margin-bottom: .5em;
+        @include tablet{
+            font-size: 1.3em;
+        }
+    }
+    &--field{
+        display: flex;
+        align-items: center;
+        margin-left: 1em;
+        &__label{
+            margin-left: .5em;
+            font-size: 1.2em;
+        }
+    }
+    &--hint{
+        font-style: italic;
+        font-size: .9em;
+        margin-bottom: 1em;
+        padding: 0 0.3em;
+    }
+}

@@ -1,41 +1,85 @@
-.presentation{
-    &--container{
-        width: 100%;
-        margin-top: 3.5em;
+.presentation {
+    @include flexcolumn-center;
+    gap: 1em;
+    &--block {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
-    }
-    &--content{
-        text-align: center;
-        font-size: 1.4em;
-        width: 70%;
-        @include mobile{
-            width: 95%;
+        width: 100%;
+        gap: 0.5em;
+        @include tablet {
+            gap: 1em;
         }
-        @include small_mobile{
-            font-size: 1.25em;
+        &__year {
+            align-self: flex-start;
+            padding: 0.3em;
+            color: #e64848;
+            border: 1px solid $color-quaternary;
+            font-family: $font-title;
+            border-radius: 5px 5px 0px 5px;
+            box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            @include tablet{
+                font-size: 1.1em;
+            }
         }
-        &__special{
-            text-decoration: underline;
+        &__content {
+            font-size: 1.05em;
+            @include tablet {
+                font-size: 1.2em;
+            }
+            & a {
+                color: #fff;
+                text-decoration: underline;
+                &:active {
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
 
-.homepage--presentation{
-    margin-top: 2em;
-    text-align: center;
-    width: 70%;
-    margin: 3em auto;
-    font-size: 1.4em;
-    // font-style: italic;
-    margin-bottom: 5em;
-    @include tablet{
-        border: 1px solid green;
-    }
-    @include mobile{
-        border: 1px solid red;
-        width: 90%;
-    }
+.special-content {
+    font-weight: 600;
 }
+// .presentation{
+//     &--container{
+//         width: 100%;
+//         margin-top: 3.5em;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     &--content{
+//         text-align: center;
+//         font-size: 1.4em;
+//         width: 70%;
+//         @include mobile{
+//             width: 95%;
+//         }
+//         @include small_mobile{
+//             font-size: 1.25em;
+//         }
+//         &__special{
+//             text-decoration: underline;
+//         }
+//     }
+// }
+
+// .homepage--presentation{
+//     margin-top: 2em;
+//     text-align: center;
+//     width: 70%;
+//     margin: 3em auto;
+//     font-size: 1.4em;
+//     // font-style: italic;
+//     margin-bottom: 5em;
+//     @include tablet{
+//         border: 1px solid green;
+//     }
+//     @include mobile{
+//         border: 1px solid red;
+//         width: 90%;
+//     }
+// }

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faNode, faJs, faSass, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faNode, faJs, faSass } from '@fortawesome/free-brands-svg-icons';
 
 export default function GlobalStack() {
     return (
@@ -10,7 +10,6 @@ export default function GlobalStack() {
                 <FontAwesomeIcon className="stack--icon" icon={faReact}/>
                 <FontAwesomeIcon className="stack--icon" icon={faNode}/>
                 <FontAwesomeIcon className="stack--icon" icon={faSass}/>
-                <FontAwesomeIcon className="stack--icon" icon={faPython}/>
             </div>
         </React.Fragment>
     );

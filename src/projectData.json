@@ -1,46 +1,54 @@
 [
     {
         "id": "0",
-        "name": "Chat App",
-        "description": "React Front End and Express JS + Socket.io",
-        "stack": ["React", "Javascript", "HTML", "CSS"],
-        "link": "https://github.com/karafaze/chat-app"
+        "name": "Weather App",
+        "description": "React Front End API call optimized for mobile",
+        "stack": ["React", "Javascript", "HTML5", "CSS3"],
+        "link": "https://github.com/karafaze/weather-app",
+        "live_site": "https://karafaze.github.io/weather-app/"
     },
     {
         "id": "1",
+        "name": "Chat App",
+        "description": "React Front End and Express JS + Socket.io",
+        "stack": ["React", "Socket.io", "Express JS", "Javascript", "HTML5", "CSS3"],
+        "link": "https://github.com/karafaze/chat-app"
+    },
+    {
+        "id": "2",
         "name": "Todo App",
-        "description": "Front End using React",
-        "stack": ["React", "Javascript", "HTML", "CSS"],
+        "description": "Front End using React with CRUD operations",
+        "stack": ["React", "Javascript", "HTML5", "CSS3"],
         "link": "https://github.com/karafaze/todo-app",
         "live_site": "https://karafaze.github.io/todo-app/"
     },
     {
-        "id": "2",
+        "id": "3",
         "name": "Oh My Food",
         "description": "Mobile first web application for a foodtech company",
-        "stack": ["HTML", "CSS", "Sass"],
+        "stack": ["HTML5", "CSS3", "Sass"],
         "link": "https://github.com/karafaze/oh_my_food",
         "live_site": "https://karafaze.github.io/oh_my_food"
     },
     {
-        "id": "3",
+        "id": "4",
         "name": "Kanap",
         "description": "Front End web application for a sofa company",
-        "stack": ["Javascript", "HTML", "CSS"],
+        "stack": ["Javascript", "HTML5", "CSS3"],
         "link": "https://github.com/karafaze/kanap"
     },
     {
-        "id": "4",
+        "id": "5",
         "name": "Piiquante",
         "description": "REST API for a spicy sauce company",
         "stack": ["ExpressJS", "Javascript"],
         "link": "https://github.com/karafaze/piiquante"
     },
     {
-        "id": "5",
+        "id": "6",
         "name": "Kasa",
         "description": "Front End using React for rental agency",
-        "stack": ["React", "Javascript", "HTML", "CSS"],
+        "stack": ["React", "Javascript", "HTML5", "CSS3"],
         "link": "https://github.com/karafaze/kasa",
         "live_site": "https://karafaze.github.io/kasa/"
     }
