@@ -7,9 +7,9 @@ export default function SectionContainer(props) {
     }
 
     const chevronIcon = show ? (
-        <i className="ri-arrow-up-s-line"></i>
-    ) : (
         <i className="ri-arrow-down-s-line"></i>
+    ) : (
+        <i className="ri-arrow-right-s-line"></i>
     );
 
     return (

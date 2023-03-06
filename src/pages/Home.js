@@ -9,7 +9,6 @@ export default function Home() {
     return (
         <main>
             <Name />
-            <GlobalStack />
             <Presentation />
             <ProjectList />
             <FormContainer />
