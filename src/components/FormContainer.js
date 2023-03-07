@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SectionContainer from "./SectionContainer";
 import Form from "./Form";
+import LoadingSpinner from "./LoadingSpinner";
 
-export default function FormContainer() {
+export default function FormContainer(props) {
     const [formTopic, setFormTopic] = useState({
         discussion: {
             topic: "discussion",
@@ -17,7 +18,6 @@ export default function FormContainer() {
             isChecked: false,
         },
     });
-
     const [currentFormTopic, setCurrentFormTopic] = useState('default')
 
     const handleClientChoice = (e) => {
@@ -58,8 +58,23 @@ export default function FormContainer() {
 
     return (
         <SectionContainer title="Contact me" id="form">
+            <LoadingSpinner />
             <form className="preform">
                 <p className="preform--title">Are you looking</p>
+                <div className="preform--field">
+                    <input
+                        onChange={handleClientChoice}
+                        type="checkbox"
+                        id="work"
+                        name="work"
+                        value="work"
+                        checked={formTopic.work.isChecked}
+                    />
+                    <label 
+                        htmlFor="work"
+                        className="preform--field__label"
+                    >for a web developer ?</label>
+                </div>
                 <div className="preform--field">
                     <input
                         onChange={handleClientChoice}
@@ -90,23 +105,9 @@ export default function FormContainer() {
                         className="preform--field__label"
                     >for a cracking joke ?</label>
                 </div>
-                <div className="preform--field">
-                    <input
-                        onChange={handleClientChoice}
-                        type="checkbox"
-                        id="work"
-                        name="work"
-                        value="work"
-                        checked={formTopic.work.isChecked}
-                    />
-                    <label 
-                        htmlFor="work"
-                        className="preform--field__label"
-                    >for a web developer ?</label>
-                </div>
             </form>
-            <p className="preform--hint">(Hint: third option is worth your time)</p>
-            <Form currentFormTopic={currentFormTopic} />
+            <p className="preform--hint">(Hint: first option is worth your time)</p>
+            <Form currentFormTopic={currentFormTopic} setShowLoading={props.setShowLoading} />
         </SectionContainer>
     );
 }

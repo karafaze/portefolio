@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 import FormMessageInput from "./FormMessageInput";
+import LoadingSpinner from "./LoadingSpinner";
 
-export default function Form({currentFormTopic}) {
+export default function Form({currentFormTopic, setShowLoading}) {
     const [formData, setFormData] = useState({
         from_name: "",
         to_name: "Fazli",
@@ -34,7 +35,10 @@ export default function Form({currentFormTopic}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const loadingSpinner = document.querySelector('#loading-spinner')
         if (checkForFormFields(formData)){
+            setShowLoading(prevState => !prevState)
+            loadingSpinner.style.display = 'flex'
             send(
                 process.env.REACT_APP_FORM_SERVICE_ID,
                 process.env.REACT_APP_FORM_TEMPLATE_ID,
@@ -52,6 +56,7 @@ export default function Form({currentFormTopic}) {
                             from: "",
                         }
                     })
+                    loadingSpinner.style.display = 'none'
                 })
                 .catch((err) => {
                     console.log(err);

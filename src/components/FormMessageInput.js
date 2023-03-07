@@ -6,12 +6,12 @@ export default function FormMessageInput(props) {
     const textareaLabel = {
         discussion: "What would you like to discuss or get insights about ?",
         joke: "Oh boy, give me a subject and i'll email you a nice one",
-        work: "Amazing, please detail me the project you need a help with or let's settle a zoom meeting"
+        work: "Detail me your project or let's settle a zoom meeting"
     };
     const textareaPlaceholder = {
         discussion: "Javascript, web development, frameworks...",
-        joke: "Laught are not guaranteed...",
-        work: "",
+        joke: "Laughter are not guaranteed...",
+        work: "Tech stack, team size, problems encountered...",
 
     }
     return (
