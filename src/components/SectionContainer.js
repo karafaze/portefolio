@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function SectionContainer(props) {
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(true);
     const toggleShow = () => {
         setShow(prevShow => !prevShow)
     }

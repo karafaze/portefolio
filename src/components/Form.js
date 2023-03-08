@@ -32,20 +32,6 @@ export default function Form({ currentFormTopic }) {
         });
     };
 
-    const handleClick = (e) => {
-        e.preventDefault();
-        const loadingSpinner = document.querySelector("#loading-spinner");
-        const successLoadingSpinner = document.querySelector("#success-loading-spinner");
-        loadingSpinner.style.display = "flex";
-        setTimeout(() => {
-            loadingSpinner.style.display = "none";
-            successLoadingSpinner.style.display = "flex"
-            setTimeout(() => {
-                successLoadingSpinner.style.display = "none"
-            }, 1000)
-        }, 1000);
-    };
-
     const handleSubmit = (e) => {
         e.preventDefault();
         const loadingSpinner = document.querySelector("#loading-spinner");
@@ -86,7 +72,6 @@ export default function Form({ currentFormTopic }) {
 
     return (
         <article className="form">
-            {/* <form onSubmit={handleClick} className="form--container"> */}
             <form onSubmit={handleSubmit} className="form--container">
                 <div className="form--left">
                     <div className="form--item">
