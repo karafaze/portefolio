@@ -8,7 +8,7 @@ export default function ProjectList() {
     const maxListLength = projectData.length;
 
     const projects = projectData.slice(0, numDisplayed).map((project, index) => {
-        if (index === numDisplayed - 2){
+        if (index === numDisplayed - 3){
             return <Project key={project.id} data={project} id={"ref-element"} />
         }
         return <Project key={project.id} data={project} />;
@@ -23,7 +23,7 @@ export default function ProjectList() {
             return prevNum === 4 ? 3 : prevNum - 2
         })
         const refElement = document.querySelector('#ref-element');
-        refElement.scrollIntoView({behavior: 'smooth'})
+        refElement.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
