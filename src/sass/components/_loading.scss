@@ -5,9 +5,11 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #28314984;
-    @include flexcenter;
+    background-color: #283149be;
+    // background-color: #28314984;
+    @include flexcolumn-center;
     display: none;
+    gap: .5em;
 }
     &--circle__outer{
         width: 100px;
@@ -22,8 +24,24 @@
         height: 80px;
         border-radius: 50%;
         border: 10px solid transparent;
-        border-right-color: white;
-        animation: spin 2s linear infinite;
+        border-top-color: white;
+        animation: spin 1.3s linear infinite;
+    }
+    &--message{
+        @include flexrow-center;
+        font-size: 1.3em;
+        gap: .1em;
+        &__dot1{
+            animation: dot .5s ease-out infinite;
+        }
+        &__dot2{
+            animation: dot .5s ease-out infinite;
+            animation-delay: .33s;
+        }
+        &__dot3{
+            animation: dot .5s ease-out infinite;
+            animation-delay: .66s;
+        }
     }
 }
 
@@ -33,5 +51,14 @@
     }
     to{
         transform: rotate(0deg);
+    }
+}
+
+@keyframes dot{
+    from {
+        transform: translateY(-10%);
+    }
+    to {
+        transform: translateY(5%);
     }
 }

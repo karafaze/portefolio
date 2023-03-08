@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import SectionContainer from "./SectionContainer";
 import Form from "./Form";
 import LoadingSpinner from "./LoadingSpinner";
+import SuccessLoadingSpinner from "./SuccessLoadingSpinner";
 
-export default function FormContainer(props) {
+export default function FormContainer() {
     const [formTopic, setFormTopic] = useState({
         discussion: {
             topic: "discussion",
@@ -58,7 +59,8 @@ export default function FormContainer(props) {
 
     return (
         <SectionContainer title="Contact me" id="form">
-            <LoadingSpinner />
+            <LoadingSpinner/>
+            <SuccessLoadingSpinner/>
             <form className="preform">
                 <p className="preform--title">Are you looking</p>
                 <div className="preform--field">
@@ -107,7 +109,7 @@ export default function FormContainer(props) {
                 </div>
             </form>
             <p className="preform--hint">(Hint: first option is worth your time)</p>
-            <Form currentFormTopic={currentFormTopic} setShowLoading={props.setShowLoading} />
+            <Form currentFormTopic={currentFormTopic} />
         </SectionContainer>
     );
 }
