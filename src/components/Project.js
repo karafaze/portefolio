@@ -8,8 +8,10 @@ export default function Project(props) {
         return <Stack key={nanoid()} stack={tech} />;
     });
 
+    const refElementId = props.id ? props.id : null
+
     return (
-        <div className="card">
+        <div className="card" id={refElementId}>
             <div className="card--top">
                 <h2 className="card--top__title">{project.name}</h2>
             </div>

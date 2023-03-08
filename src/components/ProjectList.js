@@ -7,7 +7,10 @@ export default function ProjectList() {
     const [numDisplayed, setNumDisplayed] = useState(3);
     const maxListLength = projectData.length;
 
-    const projects = projectData.slice(0, numDisplayed).map((project) => {
+    const projects = projectData.slice(0, numDisplayed).map((project, index) => {
+        if (index === numDisplayed - 2){
+            return <Project key={project.id} data={project} id={"ref-element"} />
+        }
         return <Project key={project.id} data={project} />;
     });
 
@@ -19,15 +22,14 @@ export default function ProjectList() {
         setNumDisplayed(prevNum => {
             return prevNum === 4 ? 3 : prevNum - 2
         })
-        const lastElement = document.querySelector('#last-element');
-        lastElement.scrollIntoView({behavior: 'smooth'})
+        const refElement = document.querySelector('#ref-element');
+        refElement.scrollIntoView({behavior: 'smooth'})
     };
 
     return (
         <SectionContainer title="Projects" id="projects">
             <article className="card--container">
                 {projects}
-                <div id="last-element"></div>
             </article>
             <div className="load-project">
                 {
