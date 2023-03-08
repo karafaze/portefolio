@@ -19,12 +19,15 @@ export default function ProjectList() {
         setNumDisplayed(prevNum => {
             return prevNum === 4 ? 3 : prevNum - 2
         })
+        const lastElement = document.querySelector('#last-element');
+        lastElement.scrollIntoView({behavior: 'smooth'})
     };
 
     return (
         <SectionContainer title="Projects" id="projects">
             <article className="card--container">
                 {projects}
+                <div id="last-element"></div>
             </article>
             <div className="load-project">
                 {
